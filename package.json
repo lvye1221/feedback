@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "express": "^4.15.3",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "mongoose": "^4.11.5"
   },
   "name": "feedback",
   "version": "1.0.0",

@@ -48,7 +48,7 @@ eating
 
 
 ---------
-express
+服务器 nodejs express 的安装
 
 
 server 目录
@@ -60,6 +60,15 @@ npm init
 // 用淘宝镜像来安装
 cnpm install express --save 
 ```
+
+---------
+数据库 mongosee 安装
+
+```
+cnpm i -S mongoose
+
+```
+
 
 
 
