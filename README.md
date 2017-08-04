@@ -24,6 +24,8 @@
     + index.html
 - server 服务器目录
     + db 数据库文件
+    + model 项目中存在的数据模型
+    + router 服务器
 ```
 
 ## 环境搭建 ##
@@ -46,6 +48,14 @@ gulp eat
 eating
 ```
 
+---------
+数据库 mongosee 安装
+
+```
+cnpm i -S mongoose
+
+```
+
 
 ---------
 服务器 nodejs express 的安装
@@ -59,22 +69,29 @@ npm init
 
 // 用淘宝镜像来安装
 cnpm install express --save 
+
+
+npm start
+
+// 网址
+http://localhost:3000/user/auth
 ```
 
----------
-数据库 mongosee 安装
 
-```
-cnpm i -S mongoose
+# 项目管理 #
 
-```
-
+## 文件自动执行 ##
 
 
 
 
 # 数据库设计 #
 
+
+
+```
+mongod.exe --dbpath "server\db\data"
+```
 
 
 
@@ -91,4 +108,17 @@ package.json
   },
 
 ```
+
+
+
+## mogosee ##
+
+```
+`open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead
+
+```
+
+这只是一个警告而已，关系不大
+
+
 
