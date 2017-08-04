@@ -10,8 +10,8 @@
   "main": "index.js",
   "scripts": {
     "_comment":"_comment 是代表注释：",
-    "_comment":"node server/server.js",
-    "start": "supervisor server/server.js",
+    "_comment":"supervisor server/server.js",
+    "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jack",

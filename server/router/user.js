@@ -14,20 +14,18 @@ var apiRoutes = express.Router();
 
 apiRoutes.get('/auth', function(req, res) {
 
-	console.log("user login in");
+	console.log("请求用户名", req.body.name);
 	
-	res.json({success: true, message: "测试成功！"})
+	User.findOne({
+		name: req.body.name
+	}, function(err, user) {
+		if (err) {
+			return res.json({success: false, message: "查询用户失败：" + err})
+		};
 
-//	User.findOne({
-//		name: req.body.name
-//	}, function(err, user) {
-//		if (err) {
-//			return res.json({success: false, message: "查询用户失败：" + err})
-//		};
-//
-//		console.log(user);
-//
-//	});
+		console.log(user);
+
+	});
 
 });
 
