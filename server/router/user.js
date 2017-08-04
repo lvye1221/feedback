@@ -16,7 +16,7 @@ apiRoutes.get('/auth', function(req, res) {
 
 	console.log("user login in");
 	
-	res.json({success: false, message: "查询用户失败：" + err})
+	res.json({success: true, message: "测试成功！"})
 
 //	User.findOne({
 //		name: req.body.name

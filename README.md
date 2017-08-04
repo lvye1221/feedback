@@ -80,8 +80,15 @@ http://localhost:3000/user/auth
 
 # 项目管理 #
 
-## 文件自动执行 ##
+## 服务器自动执行 ##
 
+```
+// 全局安装
+cnpm i -g supervisor
+
+
+supervisor server/server.js
+```
 
 
 
